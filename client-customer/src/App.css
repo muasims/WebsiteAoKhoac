@@ -1,0 +1,127 @@
+/* styles.css */
+
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto; 
+}
+.align-center input {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #d0d0d0;
+}
+.align-center td {
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+.text-center {
+  text-align: center;
+}
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+/* menu.css */
+
+div.border-bottom a {
+  margin: 0 10px;
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #007bff;
+  font-size: 20px;
+  transition: color 0.3s;
+  font-weight: bold; /* Chữ in đậm */
+}
+
+div.border-bottom a:hover {
+  color: #ff0000;
+}
+
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+
+  }
+div.float-left {
+  float: left;
+}
+div.float-right {
+  float: right;
+}
+div.float-clear {
+  clear: both;
+}
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 150px;
+  height: 30px;
+  padding: 10px; /* Thêm padding */
+  border: 1px solid #ccc; /* Thêm viền */
+  border-radius: 4px 0 0 4px; /* Bo góc trái */
+  outline: none; /* Bỏ viền mặc định khi focus */
+  font-size: 16px; /* Tăng kích thước chữ */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển đổi màu viền */
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #eed369;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
